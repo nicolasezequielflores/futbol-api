@@ -163,7 +163,7 @@ header{
     align-items: center;
     background: var(--principal-color);
     border-radius: 5rem;
-    color: var(--premier-color);
+    color: var(--black-color);
     font-weight: 700;
 }
 

@@ -447,7 +447,7 @@ li .opc{
     align-items: center;
     background: var(--principal-color);
     border-radius: 5rem;
-    color: var(--premier-color);
+    color: var(--black-color);
     font-weight: 700;
 }
 
@@ -1300,6 +1300,39 @@ footer{
         margin: 0 0 .5rem 0;
     }
 
+    .resultado__laliga{
+        height: 25rem;
+        width: 100%;
+    }
+
+    .resultado__bundesliga{
+        height: 25rem;
+        width: 100%;
+    }
+
+    .resultado__premier{
+        height: 25rem;
+        width: 100%;
+    }
+
+    .resultado__ligargentina{
+        height: 25rem;
+        width: 100%;
+    }
+
+    .resultado__ucl{
+        height: 25rem;
+        width: 100%;
+    }
+
+    .resultado__cl{
+        height: 25rem;
+        width: 100%;
+    }
+
+
+
+
     .resultado__card{
         color: var(--black-color);
         background: var(--principal-color);
@@ -1334,7 +1367,6 @@ footer{
     .ir__resultados:hover{
         transform: scale(1);
     }
-    
     
     .ne{
         width: 3.5rem;
