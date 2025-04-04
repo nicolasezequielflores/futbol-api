@@ -1,0 +1,1423 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+    --principal-color: #ffffff;
+    --gray-color: #797979;
+    --gray-claro-color: #eeeeee;
+    --black-color: #1a1919;
+    --dark-color: #202020;
+    --dark-mode: #303030;
+    --fondo-premier-color: #FF005B;
+    --celeste-color: #A6D1F4;
+    --poppins-font: "Poppins", sans-serif;
+
+    /*LIGAS COLORES*/
+    --ucl-color: #010447;
+    --cl-color: #DEA238;
+    --premier-color: #3F1052;
+    --ll-color: #FF4B44;
+    --b-color: #D20515;
+    --la-color: #2CBEDB;
+ 
+}
+
+/**************** CUSTOM P *******************/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/**************** RESET *******************/
+body{
+    background: var(--black-color);
+    font-family: var(--poppins-font);
+    color: var(--black-color);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html{
+    font-size: 13px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 50vh; /* Ajusta la posición centrada */
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+main{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(199,234,254);
+    background: linear-gradient(27deg, rgba(199,234,254,1) 0%, rgba(119,174,231,1) 100%);
+}
+
+/**************** HEADER *******************/
+header{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 20rem;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+    transition: background-color 0.7s ease;
+}
+
+.header__scroll{
+    background-color: var(--black-color);
+}
+
+.logo{
+    height: 13rem;
+    width: 13rem;
+}
+
+.btn{
+    margin: 0 0 .5rem 0;
+    padding: 1rem;
+    width: 5rem;
+    height: 3rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    overflow: hidden;
+    border: 0;
+}
+
+.btn__img{
+    width: 2rem;
+}
+
+nav{
+    margin: 4rem 0 0 0;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding: 0rem 20rem;
+}
+
+ul{   
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+   
+}
+
+li .opc{
+    text-align: start;
+    color: var(--principal-color);
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: .5s ease;
+    margin: 0 0 0 2rem;
+}
+
+.opc:hover{
+    color: var(--gray-color);
+}
+
+/**************** CONTENEDOR *******************/
+.hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem 20rem;
+}
+
+.titulos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titulo{
+    color: white;
+    font-size: 13rem;
+    font-weight: bold;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.sub{
+    width: 100%;
+    min-height: 1rem;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.descripcion{
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+}
+
+.btn__dos{
+    background: var(--black-color);
+    color: var(--principal-color);
+    width: 30rem;
+    height: 7rem;
+    border-radius: 5rem;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: 0.7s ease;
+}
+
+.btn__dos:hover{
+    transform: scale(.9);
+}
+
+.arrow{
+    border-radius: 50%;
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+/**************** PRINCIPAL *******************/
+.principal{
+    width: 100%;
+    min-height: 10vh;
+    padding: 5rem 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    background: var(--principal-color);
+}
+
+.ligas__container__principal{
+    width: 100%;
+    min-height: 10vh;
+    background: var(--principal-color);
+}
+
+.ligas__cont{
+    width: 100%;
+    border-bottom: 1px solid var(--black-color);
+    margin: 1rem 0;
+}
+
+.premier__cont{
+    width: 100%;
+}
+
+.texto__cont{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.premier__text{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.premier__btn{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.resultados__cont{
+    width: 100%;
+    min-height: 10rem;
+    display: none;
+    align-items: center;
+    justify-content: start;
+    padding: 2rem 0;
+}
+
+.sinpp{
+     display: flex;
+     color: var(--black-color);
+}
+
+.sinpll{
+    display: none;
+    color: var(--black-color);
+}
+
+.sinb{
+    display: none;
+    color: var(--black-color);
+}
+
+.sinpla{
+    display: none;
+    color: var(--black-color);
+}
+
+
+.down{
+    display: flex;
+    width: 2rem;
+}
+
+.down-none{
+    display: none;
+}
+
+.up{
+    display: none;
+    width: 2rem;
+}
+
+.up-flex{
+    display: flex;
+}
+
+/*PREMIER*/
+
+#uclButton{
+    cursor: pointer;
+}
+
+.ucl__resultados__cont{
+    width: 100%;
+    min-height: 10rem;
+    display: none;
+    align-items: start;
+    justify-content: start;
+    padding: 2rem 0;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.uclResultadoToggle{
+    display: flex;
+}
+
+/*PREMIER*/
+
+#clButton{
+    cursor: pointer;
+}
+
+.cl__resultados__cont{
+    width: 100%;
+    min-height: 10rem;
+    display: none;
+    align-items: start;
+    justify-content: start;
+    padding: 2rem 0;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.clResultadoToggle{
+    display: flex;
+}
+
+
+/*PREMIER*/
+
+#pButton{
+    cursor: pointer;
+}
+
+.premier__resultados__cont{
+    width: 100%;
+    min-height: 10rem;
+    display: none;
+    align-items: start;
+    justify-content: start;
+    padding: 2rem 0;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.premierResultadoToggle{
+    display: flex;
+}
+
+/*CARDS COLOR*/
+
+.resultado__ucl{
+    width: 20rem;
+    height: 30rem;
+    background: var(--ucl-color);
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.resultado__cl{
+    width: 20rem;
+    height: 30rem;
+    background: var(--cl-color);
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.resultado__premier{
+    width: 20rem;
+    height: 30rem;
+    background: var(--premier-color);
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.resultado__laliga{
+    width: 20rem;
+    height: 30rem;
+    background: var(--ll-color);
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.resultado__bundesliga{
+    width: 20rem;
+    height: 30rem;
+    background: var(--b-color);
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.resultado__ligargentina{
+    width: 20rem;
+    height: 30rem;
+    background: var(--la-color);
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.contenedor__curso{
+    width: 100%;
+    height: 5rem;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.curso{
+    width: 8rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--principal-color);
+    border-radius: 5rem;
+    color: var(--premier-color);
+    font-weight: 700;
+}
+
+.vivo{
+    width: 1rem;
+}
+
+.equipos__logos{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.logo__local{
+    width: 6rem;
+    height: 6rem;
+
+    object-fit: contain;
+}
+
+.logo__visita{
+    width: 6rem;
+    height: 6rem;
+    object-fit: contain;
+}
+
+.local__cont{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+}
+
+.local__nombre{
+    font-size: 1.5rem;
+    color: var(--principal-color);
+}
+
+.local__resultado{
+    font-size: 1.5rem;
+    color: var(--principal-color);
+}
+
+.visita__cont{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+}
+
+.visita__nombre{
+    font-size: 1.5rem;
+    color: var(--principal-color);
+}
+
+.visita__resultado{
+    font-size: 1.5rem;
+    color: var(--principal-color);
+}
+
+/*LA LIGA*/
+
+#lLButton{
+    cursor: pointer;
+}
+
+.laliga__resultados__cont{
+    width: 100%;
+    min-height: 10rem;
+    display: none;
+    align-items: start;
+    justify-content: start;
+    padding: 2rem 0;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.laLigaResultadoToggle{
+    display: flex;
+}
+
+/*BUNDESLIGA*/
+
+#bButton{
+    cursor: pointer;
+}
+
+.bundesliga__resultados__cont{
+    width: 100%;
+    min-height: 10rem;
+    display: none;
+    align-items: center;
+    justify-content: start;
+    padding: 2rem 0;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.bResultadoToggle{
+    display: flex;
+}
+
+/*LIGA ARGENTINA*/
+
+#lAButton{
+    cursor: pointer;
+}
+
+.argentina__resultados__cont{
+    width: 100%;
+    min-height: 10rem;
+    display: none;
+    align-items: center;
+    justify-content: start;
+    padding: 2rem 0;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.aResultadoToggle{
+    display: flex;
+}
+
+/**************** LIGAS *******************/
+.ligas{
+    width: 100%;
+    min-height: 60vh;
+    padding: 5rem 20rem;
+    background: var(--gray-claro-color);
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resultados__datos{
+    width: 100%;
+    min-height: 60vh;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.ir__resultados{
+    background: rgb(199,234,254);
+    background: linear-gradient(27deg, rgba(199,234,254,1) 0%, rgba(119,174,231,1) 100%);
+    width: 50rem;
+    height: 25rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    font-family: "Bebas Neue", sans-serif;
+    color: var(--principal-color);
+    font-size: 7rem;
+    transition: 0.7s ease;
+}
+
+.ir__resultados:hover{
+    transform: scale(.9);
+}
+
+.ne{
+    background: var(--black-color);
+    width: 5rem;
+    border-radius: 1rem;
+}
+
+.datos__card{
+    width: 25rem;
+    height: 25rem;
+    border-radius: 2rem;
+    background: var(--black-color);
+    padding: 2rem;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.datos__tit{
+    color: var(--principal-color);
+    font-size: 2rem;
+}
+
+.datos__cant{
+    color: var(--principal-color);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 8rem;
+    font-weight: bold;
+}
+
+/**************** FOOTER  *******************/
+footer{
+    width: 100%;
+    min-height: 10vh;
+    padding: 5rem 20rem;
+    background: var(--black-color);
+}
+
+.redes{
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.red{
+    width: 11rem;
+    height: 11rem;
+    margin: 0 1.8rem 0 3rem;
+    transition: 0.7s ease;
+}
+.red:hover{
+    transform: scale(1.1);
+}
+
+.logo__footer{
+    width: 100%;
+}
+
+.copy__cont{
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.copy{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--principal-color);
+    margin: .5rem;
+}
+
+.dd{
+    font-size: 1rem;
+    color: var(--principal-color);
+}
+
+.by{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--celeste-color);
+    text-decoration: underline;
+    margin: .5rem;
+}
+
+/**************** MEDIAQUERYS *******************/
+
+@media ((min-width: 1367px) and (max-width: 1600px)) {
+
+    header{
+        padding: 5rem 10rem;
+    }
+
+    .hero{
+        padding: 5rem 10rem;
+    }
+
+    .logo{
+        height: 13rem;
+        width: 13rem;
+    }
+
+    .titulo{
+        font-size: 10rem;
+        font-weight: bold;
+        font-family: "Bebas Neue", sans-serif;
+    }
+
+    .btn{
+        width: 2.5rem;
+    }
+
+    .btn__dos{
+        width: 25rem;
+        height: 5rem;
+    }
+
+    nav{
+        margin: 4rem 0 0 0;
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        padding: 0rem 10rem;
+    }
+    
+    /**************** PRINCIPAL *******************/
+    .principal{
+        width: 100%;
+        min-height: 10vh;
+        padding: 5rem 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: var(--principal-color);
+    }
+
+    /**************** CARDS *******************/
+    .ligas{
+        padding: 5rem 10rem;
+    }
+
+    .tit__ligas{
+        font-size: 5rem;
+    }
+
+    .cantidad__ligas{
+        font-size: 4rem;
+    }
+
+    footer{
+        padding: 5rem 10rem;
+    }
+
+}
+
+@media ((min-width: 1021px) and (max-width: 1366px)) {
+
+   
+    /**************** HEADER *******************/
+    header{
+        padding: 0 5rem;
+    }
+
+    .logo{
+        height: 12rem;
+        width: 12rem;
+    }
+
+    .btn{
+        width: 2rem;
+        height: 2rem;
+    }
+
+    nav{
+        margin: 4rem 0 0 0;
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        padding: 0rem 5rem;
+    }
+    
+    /**************** HERO *******************/
+    .hero{
+        width: 100%;
+        height: 100vh;
+        padding: 0 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titulos{
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .titulo{
+        text-align: start;
+        font-size: 8rem;
+        font-weight: bold;
+    }
+
+    .sub{
+        padding: 0;
+        align-items: start;
+    }
+
+    .btn__dos{
+        width: 25rem;
+        height: 5rem;
+        margin: 1rem 0;
+    }
+
+    .principal{
+        padding: 5rem 5rem;
+    }
+
+    /**************** LIGAS *******************/
+    .ligas{
+        padding: 5rem 5rem;
+    }
+
+    .datos__card{
+        width: 16rem;
+    }
+    
+    .datos__tit{
+        font-size: 1rem;
+    }
+    
+    .datos__cant{
+        font-size: 5rem;
+    }
+
+    /**************** FOOTER *******************/
+    footer{
+        padding: 5rem 5rem;
+    }
+
+    .red{
+        margin: 0  4rem 0 5rem ;
+        width: 9rem;
+    }
+}
+
+@media ((min-width: 801px) and (max-width: 1080px)) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    /**************** HEADER *******************/
+    header{
+        width: 100%;
+        height: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        padding: 5rem 4rem;
+        position: fixed;
+    }
+
+    .logo{
+        height: 12rem;
+        width: 12rem;
+    }
+
+    .btn{
+        height: 5rem;
+    }
+
+    nav{
+        margin: 4rem 0 0 0;
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        padding: 0rem 4rem;
+    }
+    
+    /**************** HERO *******************/
+    main{
+        min-height: 100vh;
+    }
+
+    .hero{
+        width: 100%;
+        height: 100vh;
+        padding: 5rem 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titulo{
+        text-align: start;
+        font-size: 9rem;
+        font-weight: bold;
+    }
+
+    .sub{
+        padding: 0;
+        align-items: start;
+    }
+
+    .btn__dos{
+        width: 30rem;
+        height: 7rem;
+        margin: 1rem 0;
+    }
+    
+    /**************** PRINCIPAL *******************/
+    .principal{
+        padding: 5rem 4rem;
+        width: 100%;
+        min-height: 10vh;
+    }
+
+    .premier__text{
+        font-size: 3rem;
+    }
+    
+    .premier__btn{
+        font-size: 1rem;
+    }
+
+    /**************** LIGAS *******************/
+    .ligas{
+        width: 100%;
+        min-height: 80vh;
+        padding: 5rem 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+    .cards{
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card__principal{
+        width: 100%;
+        height: 100%;
+        border-radius: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: 0.7s ease;
+    }
+
+    .card__principal:hover{
+        transform: scale(1);
+    }
+
+    .cantidad__ligas{
+        font-size: 5rem;
+        font-weight: 600;
+        margin: 0 0 .5rem 0;
+    }
+
+    .resultado__card{
+        color: var(--black-color);
+        background: var(--principal-color);
+        min-width: 15rem;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3rem;
+        font-size: 1rem;
+    }
+
+    /**************** LIGAS *******************/
+    .ligas{
+        width: 100%;
+        min-height: 50vh;
+        padding: 5rem 4rem;
+        flex-wrap: nowrap;
+        gap: 2rem;
+    }
+
+    .resultados__datos{
+        gap: 2rem;
+    }
+    
+    .ir__resultados{
+        width: 100%;
+        height: 25rem;
+        font-size: 7rem;
+    }
+    
+    .ne{
+        width: 5rem;
+    }
+    
+    .datos__card{
+        width: 100%;
+        height: 20rem;
+    }
+    
+    .datos__tit{
+        font-size: 2rem;
+    }
+    
+    .datos__cant{
+        font-size: 7rem;
+    }
+
+    /**************** FOOTER *******************/
+    footer{
+        width: 100%;
+        height: 50vh;
+        padding: 5rem 4rem;
+        background: var(--black-color);
+    }
+    
+    .logo__footer{
+        width: 100%;
+    }
+
+    .red{
+        width: 9rem;
+        margin: .7rem;
+    }
+
+
+    .copy{
+        font-size: .8rem;
+    }
+
+    .dd{
+        font-size: .8rem;
+    }
+    
+    .by{
+        font-size: .8rem;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    /**************** HEADER *******************/
+    header{
+        width: 100%;
+        height: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        padding: 0 1rem;
+        position: fixed;
+    }
+
+    .logo{
+        height: 9rem;
+        width: 9rem;
+    }
+
+    .btn{
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    
+    .btn__oculto{
+        display: none;
+    }
+    
+
+    .btn__img{
+        width: 3rem;
+    }
+
+    .btn{
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    #x{
+        display: none
+    }
+
+    nav{
+        padding: 0;
+        margin: 5rem 0;
+        width: 100%;
+        height: 100vh;
+        opacity: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav__visible{
+        width: 100%;
+        height: 100vh;
+        background: var(--black-color);
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        position: fixed;
+        transition: max-heigth 0.5s ease-out, opacity 0.5s ease-out;
+    }
+    
+    ul{  
+        height: 0;
+        opacity: 0;
+        padding: 20rem 1rem;
+        transition: max-heigth 0.5s ease-out, opacity 0.5s ease-out;
+    }
+    
+    .ul__visible{   
+        width: 100%;
+        height: 100vh;
+        background: var(--black-color);
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        position: fixed;
+        transition: max-heigth 0.5s ease-out, opacity 0.5s ease-out;
+    }
+    
+    
+    li .opc{
+        text-align: start;
+        color: var(--celeste-color);
+        font-size: 2rem;
+        font-weight: bold;
+        transition: 0.7s ease;
+        margin: 0;
+    }
+    
+    .opc:hover{
+
+        color: var(--principal-color);
+    }
+    
+    /**************** HERO *******************/
+    main{
+        min-height: 100vh;
+    }
+
+    .hero{
+        width: 100%;
+        height: 100vh;
+        padding: 0 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-x: hidden;
+    }
+
+    .titulo{
+        text-align: start;
+        font-size: 5rem;
+        font-weight: bold;
+    }
+
+    .sub{
+        padding: 0;
+        align-items: start;
+    }
+
+    .btn__dos{
+        width: 25rem;
+        height: 5rem;
+        margin: 1rem 0;
+    }
+
+    .btn__dos:hover{
+        transform: scale(1);
+    }
+    
+    /**************** PRINCIPAL *******************/
+
+    .principal{
+        padding: 5rem 1rem;
+        width: 100%;
+        min-height: 10vh;
+    }
+
+    .premier__text{
+        font-size: 3rem;
+    }
+    
+    .premier__btn{
+        font-size: 1rem;
+    }
+
+    /**************** LIGAS *******************/
+    .ligas{
+        width: 100%;
+        min-height: 80vh;
+        padding: 5rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+    .tit__container{
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tit__ligas{
+        font-size: 3rem;
+        font-weight: bold;
+        font-family: "Bebas Neue", sans-serif;
+    }
+
+    .cards{
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card__principal{
+        width: 100%;
+        height: 100%;
+        border-radius: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: 0.7s ease;
+    }
+
+    .card__principal:hover{
+        transform: scale(1);
+    }
+
+    .cantidad__ligas{
+        font-size: 5rem;
+        font-weight: 600;
+        margin: 0 0 .5rem 0;
+    }
+
+    .resultado__card{
+        color: var(--black-color);
+        background: var(--principal-color);
+        min-width: 15rem;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3rem;
+        font-size: 1rem;
+    }
+
+    /**************** LIGAS *******************/
+    .ligas{
+        width: 100%;
+        min-height: 50vh;
+        padding: 5rem 1rem;
+        flex-wrap: nowrap;
+        gap: 2rem;
+    }
+
+    .resultados__datos{
+        gap: 2rem;
+    }
+    
+    .ir__resultados{
+        width: 100%;
+        height: 25rem;
+        font-size: 5rem;
+    }
+
+    .ir__resultados:hover{
+        transform: scale(1);
+    }
+    
+    
+    .ne{
+        width: 3.5rem;
+    }
+    
+    .datos__card{
+        width: 100%;
+        height: 20rem;
+    }
+    
+    .datos__tit{
+        font-size: 1.5rem;
+    }
+    
+    .datos__cant{
+        font-size: 5rem;
+    }
+
+
+    /**************** FOOTER *******************/
+    footer{
+        overflow-x: hidden;
+        width: 100%;
+        min-height: 50vh;
+        padding: 5rem 1rem;
+        background: var(--black-color);
+        flex-direction: column;
+    }
+    
+    .logo__footer{
+        width: 100%;
+    }
+
+    .red{
+        width: 6.4rem;
+        margin: 0;
+    }
+
+    .red:hover{
+        transform: scale(1);
+    }
+
+    .copy__cont{
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .copy{
+        margin: 0;
+        font-size: .8rem;
+    }
+
+    .dd{
+        font-size: .8rem;
+    }
+    
+    .by{
+        font-size: .8rem;
+    }
+    
+}
+
+/*@media (max-width: 600px) {
+
+    .titulo{
+        font-size: 4rem;
+    }
+
+    .btn__dos{
+        width: 20rem;
+        height: 5rem;
+        margin: 1rem 0;
+    }
+    
+    .red{
+        width: 5.3rem;
+        margin: 0;
+    }
+
+}*/
+
+
+
+
