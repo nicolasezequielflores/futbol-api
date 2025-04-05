@@ -1,5 +1,8 @@
 import animaciones from "./modules/animaciones.js";
-animaciones();
+
+window.addEventListener('load', () =>{
+    animaciones();
+})
 
 
 const d = document;
@@ -16,11 +19,10 @@ const cardLigaArgentina = d.getElementById('ligaArgentinaResultado');
 const partidos = async () => {
 
     try{
-        const response = await fetch(url);
-
+        /*const response = await fetch(url);
         if (!response.ok) throw new Error(`Error: ${response.status}`);
         const data = await response.json()
-        console.log(data.response);
+        console.log(data.response);*/
         
         let ucl= '';
         let cl = '';

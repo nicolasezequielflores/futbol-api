@@ -79,6 +79,7 @@ header{
 .logo{
     height: 13rem;
     width: 13rem;
+    opacity: 0;
 }
 
 .btn{
@@ -107,6 +108,7 @@ nav{
     align-items: end;
     justify-content: end;
     padding: 0rem 20rem;
+    opacity: 0;
 }
 
 ul{   
@@ -149,6 +151,7 @@ li .opc{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    opacity: 0;
 }
 
 .titulo{
@@ -1329,9 +1332,6 @@ footer{
         height: 25rem;
         width: 100%;
     }
-
-
-
 
     .resultado__card{
         color: var(--black-color);
