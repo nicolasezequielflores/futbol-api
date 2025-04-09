@@ -1,8 +1,17 @@
 import animaciones from "./modules/animaciones.js";
 
+document.body.classList.add('no__scroll');
+window.scrollTo(0, 0);
 window.addEventListener('load', () =>{
-    animaciones();
+    setTimeout(() =>{
+        document.body.classList.remove('no__scroll')
+    }, 1000);
+    setTimeout(() =>{
+        animaciones();
+    }, 100);
+
 })
+
 
 
 const d = document;
@@ -19,10 +28,10 @@ const cardLigaArgentina = d.getElementById('ligaArgentinaResultado');
 const partidos = async () => {
 
     try{
-        /*const response = await fetch(url);
+        const response = await fetch(url);
         if (!response.ok) throw new Error(`Error: ${response.status}`);
         const data = await response.json()
-        console.log(data.response);*/
+        console.log(data.response);
         
         let ucl= '';
         let cl = '';

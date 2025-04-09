@@ -3,7 +3,7 @@ gsap.registerPlugin(ScrollTrigger);
 const d = document;
 
 function animaciones () {
-
+    
     //HEADER
     const menu = d.getElementById('menu');
     const x = d.getElementById('x');

@@ -37,6 +37,10 @@ body{
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+body.no__scroll{
+    overflow: hidden;
+}
+
 html{
     font-size: 13px;
     scroll-behavior: smooth;
@@ -207,7 +211,7 @@ li .opc{
 /**************** PRINCIPAL *******************/
 .principal{
     width: 100%;
-    min-height: 10vh;
+    min-height: 30vh;
     padding: 5rem 20rem;
     display: flex;
     align-items: center;
@@ -285,6 +289,7 @@ li .opc{
 .down{
     display: flex;
     width: 2rem;
+    height: 2rem;
 }
 
 .down-none{
@@ -294,6 +299,7 @@ li .opc{
 .up{
     display: none;
     width: 2rem;
+    height: 2rem;
 }
 
 .up-flex{

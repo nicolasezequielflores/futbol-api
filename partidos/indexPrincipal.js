@@ -18,7 +18,6 @@ const futbol = async () => {
             const data = await response.json();
             console.log(data.response)
 
-
             setTimeout(() =>{
                 loader.style.display = 'none';
             }, 1900);
@@ -32,11 +31,13 @@ const futbol = async () => {
             }
 
             data.response.forEach(dat => {
-                if(dat.league){
+                const imagenLocal = dat.teams.home.logo === '' ? '../img/logo__web.svg' : dat.teams.home.logo ;
+                const imagenVisita = dat.teams.away.logo === '' ? '../img/logo__web.svg' : dat.teams.away.logo;
 
 
+                dat.league ?
+                    
                         ac += `
-                                
                             <div class="resultado__pg">
                         
                                 <div class="contenedor__curso">
@@ -44,8 +45,8 @@ const futbol = async () => {
                                     <img src="../img/vivo.svg" alt="circulo vivo" class="vivo">
                                 </div>       
                                 <div class="equipos__logos">
-                                    <img src="${dat.teams.home.logo}" alt="logo local" class="logo__local">
-                                    <img src="${dat.teams.away.logo}" alt="logo visita" class="logo__visita">
+                                    <img src="${imagenLocal }" alt="logo local" class="logo__local" onerror="this.onerror=null; this.src='../img/logo__web.svg';">
+                                    <img src="${imagenVisita}" alt="logo visita" class="logo__visita"  onerror="this.onerror=null; this.src='../img/logo__web.svg';">
                                 </div>
                     
                                 <div class="local__cont">
@@ -63,14 +64,12 @@ const futbol = async () => {
                                 </div>
 
                                 
-                                
                             </div>  
                         
                         `       
-     } 
-    else{
-        console.log('No hay equipo');
-    }});
+                :
+                console.log('No hay equipos disponibles');
+   });
        datos.innerHTML = ac; 
     }
 
@@ -80,8 +79,5 @@ const futbol = async () => {
 }
 
 futbol();
-
-//**************** A N I M A C I O N E S ****************//
-
 
 
