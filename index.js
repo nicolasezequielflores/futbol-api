@@ -16,7 +16,6 @@ window.addEventListener('load', () =>{
 
 const d = document;
 const url = 'https://api-football-proxy.nicolas1999dt.workers.dev';
-const sinPartidos = d.querySelector('.sinpp');
 const cardUcl = d.getElementById('uclResultado');
 const cardCl = d.getElementById('clResultado');
 const cardPremier = d.getElementById('premierResultado');
@@ -51,8 +50,6 @@ const partidos = async () => {
         }
 
         else{
-
-        sinPartidos.style.display = 'none'; 
 
         data.response.forEach(dat => {
             //UCL
@@ -240,7 +237,6 @@ const partidos = async () => {
     }
 
     catch(e){
-        sinPartidos.style.display = 'flex';
         console.error(e);
     }
 
