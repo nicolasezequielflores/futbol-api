@@ -13,7 +13,8 @@
     --poppins-font: "Poppins", sans-serif;
 
     /*LIGAS COLORES*/
-    --ucl-color: #010447;
+    /*--ucl-color: #010447; CHAMPION LEAGUE*/
+    --ucl-color: linear-gradient(90deg,rgba(170, 135, 56, 1) 0%, rgba(218, 203, 90, 1) 35%, rgba(235, 219, 104, 1) 100%);; /*MDC Prov.*/
     --cl-color: #DEA238;
     --premier-color: #3F1052;
     --ll-color: #FF4B44;
@@ -72,7 +73,7 @@ header{
     padding: 5rem 20rem;
     overflow: hidden;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     transition: background-color 0.7s ease;
 }
 
@@ -106,7 +107,7 @@ header{
 nav{
     margin: 4rem 0 0 0;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     width: 100%;
     display: flex;
     align-items: end;
@@ -155,12 +156,13 @@ li .opc{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 0 25rem 0 0;
     opacity: 0;
 }
 
 .titulo{
     color: white;
-    font-size: 13rem;
+    font-size: 8rem;
     font-weight: bold;
     font-family: "Bebas Neue", sans-serif;
 }
@@ -231,8 +233,17 @@ li .opc{
     width: 100%;
     border-bottom: 1px solid var(--black-color);
     margin: 1rem 0;
+    display: none;
 }
 
+/**************** MODIFICACION DEL LA VISTA PRINCIPAL (CAMBIAR DESPUES DEL MDC *******************/
+.mundial{                               /******/
+    width: 100%;                       /******/
+    border-bottom: 1px solid var(--black-color);/******/
+    margin: 1rem 0;/******/
+    /******/
+/******/}
+/***********************************/
 .premier__cont{
     width: 100%;
 }
@@ -494,14 +505,16 @@ li .opc{
     padding: 0.5rem 2rem;
 }
 
+/******DESPUES DEL MDC CAMBIAR EL COLOR DE LOS  NOMBRES Y RESULTADOS POR EL COLOR PRINCIPAL******/
+
 .local__nombre{
     font-size: 1.5rem;
-    color: var(--principal-color);
+    color: var(--black-color);
 }
 
 .local__resultado{
     font-size: 1.5rem;
-    color: var(--principal-color);
+    color: var(--black-color);
 }
 
 .visita__cont{
@@ -514,13 +527,14 @@ li .opc{
 
 .visita__nombre{
     font-size: 1.5rem;
-    color: var(--principal-color);
+   color: var(--black-color);
 }
 
 .visita__resultado{
     font-size: 1.5rem;
-    color: var(--principal-color);
+   color: var(--black-color);
 }
+/******DESPUES DEL MDC CAMBIAR EL COLOR DE LOS  NOMBRES Y RESULTADOS POR EL COLOR PRINCIPAL******/
 
 /*LA LIGA*/
 
@@ -715,6 +729,242 @@ footer{
     margin: .5rem;
 }
 
+/**************** MUNDIAL DE CLUBES *******************/
+
+.mdc__cont{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--black-color);
+    padding: 5rem 20rem;
+    overflow: hidden;
+}
+
+
+.tit__mdc{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 15rem;
+    font-weight: bold;
+    background: var(--ucl-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fecha__mdc{
+    font-size: 1.5rem;
+    color: var(--principal-color);
+    font-weight: 300;
+}
+
+.fecha__text{
+    background: var(--cl-color);
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+}
+
+/**************** MUNDIAL DE CLUBES FIXTURE*******************/
+
+.mdc__fixture{
+    width: 100%;
+    min-height: 10rem;
+    background: var(--dark-mode);
+    padding: 5rem 20rem;
+    display: flex;
+ 
+}
+
+.card__partidosmdc{
+    flex: 0 0 auto;
+    width: 30rem;
+    height: 25rem;
+    border-radius: 3rem;
+    background: var(--gray-claro-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.degradado{
+    position: relative;
+    display: flex;
+    overflow-x: hidden;
+}
+
+.mdc_cont__f::-webkit-scrollbar{
+    display: none;
+}
+
+
+.mdc_cont__f{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.mdc_scroll {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 2rem;
+  padding: 2rem 0;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.mdc_cont__f::after,
+.mdc_cont__f::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 10rem;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.mdc_cont__f::before{
+    left: 0;
+    background: linear-gradient(to right, #303030 0%, transparent 100%);
+}
+
+.mdc_cont__f::after{
+    right: 0;
+    background: linear-gradient(to left, #303030 0%, transparent 100%);
+}
+
+ .mdc_scroll::-webkit-scrollbar{
+        display: none;
+}
+
+/****************BOTONES CARRUSEL MUNDIAL DE CLUBES*******************/
+
+.btn__cont{
+    width: 100%;
+    height: 10rem;
+    background: var(--dark-mode);
+    padding: 0 20rem;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.left{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    margin: 0 1rem 0 0;
+    border: 0;
+    cursor: pointer;
+    background: var(--principal-color);
+    transition: .8s;
+}
+
+.right{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    border: 0;
+    cursor: pointer;
+    background: var(--principal-color);
+    transition: .8s;
+}
+
+.left:hover,
+.right:hover{
+    transform: scale(1.1);
+}
+
+.flecha{
+    width: 3rem;
+}
+
+/****************ESCUDOS*******************/
+
+.escudos__cont{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+}
+
+.local__mdc{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.local__mdc__img{
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+}
+
+.local__mdc__text{
+    margin: 1rem 0 0 0;
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+
+.vs__mdc{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vs__text{
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.visitante__mdc{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.visitante__mdc__img{
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+}
+
+.visitante__mdc__text{
+    margin: 1rem 0 0 0;
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+
+/****************FECHA*******************/
+
+.fecha__mdc__cont{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+
+
 /**************** MEDIAQUERYS *******************/
 
 @media ((min-width: 1367px) and (max-width: 1600px)) {
@@ -732,8 +982,15 @@ footer{
         width: 13rem;
     }
 
+    .titulos{
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        padding: 0 40rem 0 0;
+    }
+
     .titulo{
-        font-size: 10rem;
+        font-size: 6rem;
         font-weight: bold;
         font-family: "Bebas Neue", sans-serif;
     }
@@ -787,6 +1044,17 @@ footer{
         padding: 5rem 10rem;
     }
 
+    /**************** MUNDIAL DE CLUBES *******************/
+
+    .mdc__cont{
+        padding: 5rem 10rem;
+    }
+
+    /**************** MUNDIAL DE CLUBES FIXTURE*******************/
+
+    .mdc__fixture{
+        padding: 5rem 10rem;
+    }
 }
 
 @media ((min-width: 1021px) and (max-width: 1366px)) {
@@ -832,11 +1100,12 @@ footer{
         display: flex;
         align-items: start;
         justify-content: center;
+
     }
 
     .titulo{
         text-align: start;
-        font-size: 8rem;
+        font-size: 6rem;
         font-weight: bold;
     }
 
@@ -881,6 +1150,23 @@ footer{
         margin: 0  4rem 0 5rem ;
         width: 9rem;
     }
+
+    /**************** MUNDIAL DE CLUBES *******************/
+
+    .mdc__cont{
+        padding: 5rem 5rem;
+    }
+
+    .tit__mdc{
+        font-size: 13rem;
+    }
+
+    /**************** MUNDIAL DE CLUBES FIXTURE*******************/
+
+    .mdc__fixture{
+        padding: 5rem 5rem;
+    }
+
 }
 
 @media ((min-width: 801px) and (max-width: 1080px)) {
@@ -950,6 +1236,10 @@ footer{
         width: 30rem;
         height: 7rem;
         margin: 1rem 0;
+    }
+
+    .titulos{
+        padding: 0;
     }
     
     /**************** PRINCIPAL *******************/
@@ -1085,6 +1375,27 @@ footer{
     
     .by{
         font-size: .8rem;
+    }
+
+    /**************** MUNDIAL DE CLUBES *******************/
+
+    .mdc__cont{
+        padding: 5rem 4rem;
+    }
+
+    .tit__mdc{
+        font-size: 10rem;
+    }
+
+    
+    /**************** MUNDIAL DE CLUBES FIXTURE*******************/
+
+    .mdc__fixture{
+        padding: 5rem 4rem;
+    }
+
+    .btn__cont{
+        display: none;
     }
 
 }
@@ -1235,6 +1546,10 @@ footer{
 
     .btn__dos:hover{
         transform: scale(1);
+    }
+
+    .titulos{
+        padding: 0;
     }
     
     /**************** PRINCIPAL *******************/
@@ -1434,28 +1749,67 @@ footer{
     .by{
         font-size: .8rem;
     }
-    
+
+    /**************** MUNDIAL DE CLUBES *******************/
+
+    .mdc__cont{
+        padding: 5rem 1rem;
+    }
+
+    .tit__mdc{
+        font-size: 6rem;
+    }
+
+    .fecha__mdc{
+    font-size: 1rem;
+    }
+
+    /**************** MUNDIAL DE CLUBES FIXTURE*******************/
+
+    .mdc__fixture{
+        height: 100vh;
+        padding: 5rem 0rem;
+    }
+
+    .btn__cont{
+        display: none;
+    }
+
+
+    .mdc_scroll {
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+
+    .card__partidosmdc{
+        width: 90%;
+        height: 25rem;
+    }
+
+    .degradado{
+        overflow-x: hidden;
+    }
+
+    .mdc_cont__f{
+        overflow: hidden;
+    }
+
+    .mdc_cont__f::before{
+        background: transparent;
+    }
+
+    .mdc_cont__f::after{
+        background: transparent;
+    }
+
+    .mdc_scroll::-webkit-scrollbar{
+        display: none;
+    }
+
 }
-
-/*@media (max-width: 600px) {
-
-    .titulo{
-        font-size: 4rem;
-    }
-
-    .btn__dos{
-        width: 20rem;
-        height: 5rem;
-        margin: 1rem 0;
-    }
-    
-    .red{
-        width: 5.3rem;
-        margin: 0;
-    }
-
-}*/
-
 
 
 

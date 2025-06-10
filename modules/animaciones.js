@@ -168,9 +168,57 @@ function animaciones () {
 
     );
 
-    //LIGAS
+    //MDC
 
     gsap.fromTo(
+        '.tit__mdc',
+        {
+            x: -100,
+            opacity: 0
+        },
+        {
+            x: 0,
+            opacity: 1,
+            duration: 1,
+            ease: 'power2.out',
+            scrollTrigger: {
+                trigger: '.tit__mdc',
+                start: 'top 100%',
+                end: 'top 50%',
+                toggleActions: 'restart none none none', // Reinicia cada vez que baja
+                scrub: false, // No mantiene el efecto ligado al scroll
+                once: false, // Permite que se active cada vez que reaparece
+            }
+        }
+    );
+
+        gsap.fromTo(
+        '.fecha__mdc',
+        {
+            x: -500,
+            opacity: 0
+        },
+        {
+            x: 0,
+            opacity: 1,
+            duration: 1.5,
+            ease: 'power2.out',
+            scrollTrigger: {
+                trigger: '.fecha__mdc',
+                start: 'top 100%',
+                end: 'top 90%',
+                toggleActions: 'restart none none none', // Reinicia cada vez que baja
+                scrub: false, // No mantiene el efecto ligado al scroll
+                once: false, // Permite que se active cada vez que reaparece
+            }
+        }
+    );
+
+ 
+
+    //LIGAS
+
+   /* gsap.fromTo(
         '.ligas__container__principal',
         {
             y: 100,
@@ -212,7 +260,7 @@ function animaciones () {
                 once: false, // Permite que se active cada vez que reaparece
             }
         }
-    );
+    );*/
 
     
     gsap.fromTo(

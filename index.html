@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="descripcion" content="Sigue los resultados de todas las ligas en vivo">
+    <meta name="description" content="Pagina de resultados de Futbol en vivo">
     <title>Mística</title>
     <link rel="shortcut icon" href="./img/logo__web.svg" type="image/x-icon">
     <link rel="stylesheet" href="style/style.css">
@@ -41,16 +41,35 @@
             </div>
         </div>
 
+        <div class="mdc__cont">
+            <p class="tit__mdc">Copa Mundial de Clubes 25</p>
+            <p class="fecha__mdc">15 jun 2025 - 13 jul 2025</p>
+        </div>
+
+        <div class="mdc__fixture">
+            <div class="degradado">
+                <div class="mdc_cont__f">
+                    <div class="mdc_scroll">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="btn__cont">
+            <button class="left"><img src="./img/arrows/left.svg" alt="arrow left" class="flecha"></button>
+            <button class="right"><img src="./img/arrows/right.svg" alt="arrow right" class="flecha"></button>
+        </div>
+
         <div class="principal">
 
             <div class="ligas__container__principal">
-                <div class="ligas__cont">
+                <div class="mundial">
                     <div class="premier__cont">
                         <div class="texto__cont">
-                            <p class="premier__text">UEFA Champions League</p>
+                            <p class="premier__text">Copa Mundial de Clubes de la FIFA</p>
                             <button class="premier__btn" id="uclButton">
-                                <img src="./img/arrow-down.svg" alt="arrow down" class="down" id="arrow-down-ucl">
-                                <img src="./img/arrow-up.svg" alt="arrow down" class="up" id="arrow-up-ucl">
+                                <img src="./img/arrow-down.svg" alt="arrow down" class="down" id="arrow-down-ucl" loading="lazy">
+                                <img src="./img/arrow-up.svg" alt="arrow down" class="up" id="arrow-up-ucl" loading="lazy">
                             </button>
                         </div>
                         <div class="ucl__resultados__cont" id="uclResultado">
@@ -63,8 +82,8 @@
                         <div class="texto__cont">
                             <p class="premier__text">CONMEBOL Libertadores</p>
                             <button class="premier__btn" id="clButton">
-                                <img src="./img/arrow-down.svg" alt="arrow down" class="down" id="arrow-down-cl">
-                                <img src="./img/arrow-up.svg" alt="arrow down" class="up" id="arrow-up-cl">
+                                <img src="./img/arrow-down.svg" alt="arrow down" class="down" id="arrow-down-cl" loading="lazy">
+                                <img src="./img/arrow-up.svg" alt="arrow down" class="up" id="arrow-up-cl" loading="lazy">
                             </button>
                         </div>
                         <div class="cl__resultados__cont" id="clResultado">
@@ -77,8 +96,8 @@
                         <div class="texto__cont">
                             <p class="premier__text">PREMIER LEAGUE</p>
                             <button class="premier__btn" id="pButton">
-                                <img src="./img/arrow-down.svg" alt="arrow down" class="down" id="arrow-down-premier">
-                                <img src="./img/arrow-up.svg" alt="arrow down" class="up" id="arrow-up-premier">
+                                <img src="./img/arrow-down.svg" alt="arrow down" class="down" id="arrow-down-premier" loading="lazy">
+                                <img src="./img/arrow-up.svg" alt="arrow down" class="up" id="arrow-up-premier" loading="lazy">
                             </button>
                         </div>
                         <div class="premier__resultados__cont" id="premierResultado">
@@ -91,8 +110,8 @@
                         <div class="texto__cont">
                             <p class="premier__text">LA LIGA</p>
                             <button class="premier__btn" id="lLButton">
-                                <img src="./img/arrow-down.svg" alt="arrow down" class="down" id="arrow-down-laliga">
-                                <img src="./img/arrow-up.svg" alt="arrow down" class="up" id="arrow-up-laliga">
+                                <img src="./img/arrow-down.svg" alt="arrow down" class="down" id="arrow-down-laliga" loading="lazy">
+                                <img src="./img/arrow-up.svg" alt="arrow down" class="up" id="arrow-up-laliga" loading="lazy">
                             </button>
                         </div>
                         <div class="laliga__resultados__cont" id="laLigaResultado">
@@ -105,8 +124,8 @@
                         <div class="texto__cont">
                             <p class="premier__text">BUNDESLIGA</p>
                             <button class="premier__btn" id="bButton">
-                                <img src="./img/arrow-down.svg" alt="arrow down" class="down" id="arrow-down-bundesliga">
-                                <img src="./img/arrow-up.svg" alt="arrow down" class="up" id="arrow-up-bundesliga">
+                                <img src="./img/arrow-down.svg" alt="arrow down" class="down" id="arrow-down-bundesliga" loading="lazy">
+                                <img src="./img/arrow-up.svg" alt="arrow down" class="up" id="arrow-up-bundesliga" loading="lazy">
                             </button>
                         </div>
                         <div class="bundesliga__resultados__cont" id="bundesligaResultado">
@@ -119,8 +138,8 @@
                         <div class="texto__cont">
                             <p class="premier__text">LIGA ARGENTINA</p>
                             <button class="premier__btn" id="lAButton">
-                                <img src="./img/arrow-down.svg" alt="arrow down" class="down" id="arrow-down-la">
-                                <img src="./img/arrow-up.svg" alt="arrow down" class="up" id="arrow-up-la">
+                                <img src="./img/arrow-down.svg" alt="arrow down" class="down" id="arrow-down-la" loading="lazy">
+                                <img src="./img/arrow-up.svg" alt="arrow down" class="up" id="arrow-up-la" loading="lazy">
                             </button>
                         </div>
                         <div class="argentina__resultados__cont" id="ligaArgentinaResultado">
@@ -135,7 +154,7 @@
 
             <div class="resultados__datos">
                 <a href="./partidos/indexPrincipal.html" class="ir__resultados">
-                    <p>   Sigue los partidos en vivo  <span><img src="./img/ne.svg" alt="" class="ne"></span></p>
+                    <p>   Sigue los partidos en vivo  <span><img src="./img/ne.svg" alt="" class="ne" loading="lazy"></span></p>
                   </a>
       
                   <div class="datos__card">
@@ -153,12 +172,12 @@
     <footer>
         <div class="logo___footer">
             <div class="redes" id="redesid">
-                <a href="https://www.instagram.com/?hl=es" class="red"><img src="./img/redes/instagram.svg" alt="instagram" class="red"></a>
-                <a href="https://www.facebook.com/?locale=es_LA" class="red"><img src="./img/redes/facebook.svg" alt="facebook" class="red"></a>
-                <a href="https://x.com/?lang=es" class="red"><img src="./img/redes/x.svg" alt="x" class="red"></a>
-                <a href="https://www.youtube.com/" class="red"><img src="./img/redes/youtube.svg" alt="youtube" class="red"></a>
+                <a href="https://www.instagram.com/?hl=es" class="red"><img src="./img/redes/instagram.svg" alt="instagram" class="red" loading="lazy"></a>
+                <a href="https://www.facebook.com/?locale=es_LA" class="red"><img src="./img/redes/facebook.svg" alt="facebook" class="red" loading="lazy"></a>
+                <a href="https://x.com/?lang=es" class="red"><img src="./img/redes/x.svg" alt="x" class="red" loading="lazy"></a>
+                <a href="https://www.youtube.com/" class="red"><img src="./img/redes/youtube.svg" alt="youtube" class="red" loading="lazy"></a>
             </div>
-           <img src="img/logo__mistica.svg" alt="logo mistica" class="logo__footer">
+           <img src="img/logo__mistica.svg" alt="logo mistica" class="logo__footer" loading="lazy">
            <div class="copy__cont">
                 <p class="copy">© 2025 MíSTICA. Todos los derechos reservados.</p>
                 <p class="dd"> Diseñado y desarrollado por<a href="https://flores-gray.vercel.app/" class="by">FLORES.</a></p>
@@ -172,5 +191,8 @@
         src="https://widgets.api-sports.io/2.0.3/widgets.js">
     </script>
     <script type="module" src="index.js"></script>
+    <script type="module" src="./modules/partidos-mdc.js"></script>
+    <script type="module" src="./modules/logica-partidos-mdc.js"></script>
+    <script type="module" src="./modules/carrusel.js"></script>
 </body>
 </html>

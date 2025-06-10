@@ -102,6 +102,14 @@ header{
     padding: 10rem 0 0 0;
 }
 
+.no__partidos__tit{
+    font-size: 5rem;
+    background: var(--black-color);
+    color: var(--principal-color);
+    padding: 1rem 3rem;
+    border-radius: 5rem;
+}
+
 .datos-card{
     width: 100%;
     min-height: 100%;
@@ -320,6 +328,19 @@ header{
 
 
 @media (max-width: 800px) {
+
+    /**************** SIN PARTIDOS *******************/
+
+    .no__partidos__tit{
+    font-size: 1rem;
+    padding: 0;
+    border-radius: 5rem;
+    width: 90%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
 
     /**************** HEADER *******************/
 

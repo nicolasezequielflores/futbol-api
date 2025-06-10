@@ -12,8 +12,6 @@ window.addEventListener('load', () =>{
 
 })
 
-
-
 const d = document;
 const url = 'https://api-football-proxy.nicolas1999dt.workers.dev';
 const cardUcl = d.getElementById('uclResultado');
@@ -29,7 +27,7 @@ const partidos = async () => {
     try{
         const response = await fetch(url);
         if (!response.ok) throw new Error(`Error: ${response.status}`);
-        const data = await response.json()
+        const data = await response.json();
         
         let ucl= '';
         let cl = '';
@@ -52,7 +50,7 @@ const partidos = async () => {
 
         data.response.forEach(dat => {
             //UCL
-            if(dat.league.id === 2){
+            if(dat.league.id === 256){
                 ucl +=  `
                 <div class="resultado__ucl">
         
