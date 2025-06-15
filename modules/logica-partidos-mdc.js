@@ -23,7 +23,7 @@ card.classList.add('card__partidosmdc')
                         </div>
                     </div>
                     <div class="fecha__mdc__cont">
-                        <p class="fecha__text">${partido.fecha}, ${partido.hora}, ${partido.ciudad}</p>
+                        <p class="fecha__text">${partido.fecha} ${partido.hora} ${partido.ciudad}</p>
                     </div>  
     
     `;

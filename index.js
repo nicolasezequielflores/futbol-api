@@ -50,7 +50,7 @@ const partidos = async () => {
 
         data.response.forEach(dat => {
             //UCL
-            if(dat.league.id === 256){
+            if(dat.league.id === 15){
                 ucl +=  `
                 <div class="resultado__ucl">
         

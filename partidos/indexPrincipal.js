@@ -16,6 +16,7 @@ const futbol = async () => {
             const response = await fetch(url);
             if (!response.ok) throw new Error(`Error: ${response.status}`);
             const data = await response.json();
+            console.log(data)
             
             setTimeout(() =>{
                 loader.style.display = 'none';
