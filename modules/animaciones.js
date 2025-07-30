@@ -100,9 +100,7 @@ function animaciones () {
         arrowUpLa.classList.toggle('up-flex');
     });
 
-
     //ANIMACION
-
 
     window.addEventListener('scroll', () =>{
         if(window.scrollY > 50){
@@ -284,12 +282,6 @@ function animaciones () {
             }
         }
     );
-
-
-    
-
-
-    
     
 } export default animaciones;
 
