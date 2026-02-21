@@ -1,28 +1,28 @@
-# ⚽ MÍSTICA.
+⚽ MÍSTICA – Resultados de Fútbol en Vivo - https://futbol-api-virid.vercel.app/
+MÍSTICA es una web moderna, rápida y responsive que muestra resultados de fútbol en vivo de las principales ligas y torneos del mundo 🌍.
+Pensada para que accedas de forma clara y directa a la información que realmente te interesa, sin distracciones.
 
-**MÍSTICA** es una página web minimalista dedicada a mostrar **resultados de fútbol en vivo** de ligas de todo el mundo. Con un diseño moderno y simple, los usuarios pueden ver los partidos que están en curso de manera clara y rápida.
+🆕 Última actualización – Junio 2025
+Aprovechando el Mundial de Clubes 2025, se incorporaron nuevas funcionalidades:
 
----
+✅ Cobertura completa del Mundial de Clubes
 
-## 🌍 ¿Qué ofrece?
+✅ Sección de próximos partidos con agenda actualizada
 
-- Resultados en vivo de diferentes ligas internacionales.
-- Interfaz dividida en dos secciones.
+✅ Mejoras visuales en las tarjetas y navegación
 
----
+✅ Optimización para móviles y rendimiento general
 
-## 🛠 Tecnologías utilizadas
+🚀 Accedé a la web: https://futbol-api-virid.vercel.app/
 
-- **HTML5**  
-- **CSS3**  
-- **JavaScript Vanilla**
+🛠️ Tecnologías utilizadas
 
----
+HTML5
 
-## 🎨 Paleta de colores
+CSS3
 
-- `#85B7EA` – Celeste (fondo presentación)
-- `#FFFFFF` – Blanco (texto y fondo)
-- `#1A1919` – Negro grisáceo (fondo resultados)
+JavaScript Vanilla
 
----
+📱 100% responsive
+Diseñado para que puedas consultar resultados desde el celular, tablet o computadora, estés donde estés.
+
