@@ -801,8 +801,7 @@ footer{
     }
 
 }
-
-@media ((min-width: 1021px) and (max-width: 1366px)) {
+@media ((min-width: 1200px) and (max-width: 1366px)) {
 
    
     /**************** HEADER *******************/
@@ -1104,9 +1103,362 @@ footer{
     .by{
         font-size: .8rem;
     }
+}}
+
+@media ((min-width: 901px) and (max-width: 1200px)) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    /**************** HEADER *******************/
+    header{
+        width: 100%;
+        height: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        padding: 0rem;
+        position: fixed;
+        padding: 1rem;
+    }
+
+    .logo{
+        height: 9rem;
+        width: 9rem;
+    }
+
+    .btn{
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    
+    .btn__oculto{
+        display: none;
+    }
+    
+
+    .btn__img{
+        width: 3rem;
+    }
+
+    .btn{
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    #x{
+        display: none
+    }
+
+    nav{
+        padding: 0;
+        margin: 5rem 0;
+        width: 100%;
+        height: 100vh;
+        opacity: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav__visible{
+        width: 100%;
+        height: 100vh;
+        background: var(--black-color);
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        position: fixed;
+        transition: max-heigth 0.5s ease-out, opacity 0.5s ease-out;
+    }
+    
+    ul{  
+        height: 0;
+        opacity: 0;
+        padding: 20rem 1rem;
+        transition: max-heigth 0.5s ease-out, opacity 0.5s ease-out;
+    }
+    
+    .ul__visible{   
+        width: 100%;
+        height: 100vh;
+        background: var(--black-color);
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        position: fixed;
+        transition: max-heigth 0.5s ease-out, opacity 0.5s ease-out;
+    }
+    
+    
+    li .opc{
+        text-align: start;
+        color: var(--celeste-color);
+        font-size: 2rem;
+        font-weight: bold;
+        transition: 0.7s ease;
+        margin: 0;
+    }
+    
+    .opc:hover{
+
+        color: var(--principal-color);
+    }
+    
+    /**************** HERO *******************/
+    main{
+        min-height: 100vh;
+    }
+
+    .hero{
+        width: 100%;
+        height: 100vh;
+        padding: 0 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-x: hidden;
+    }
+
+    .titulo{
+        text-align: start;
+        font-size: 7rem;
+        font-weight: bold;
+    }
+
+    .sub{
+        padding: 0;
+        align-items: start;
+    }
+
+    .btn__dos{
+        width: 25rem;
+        height: 5rem;
+        margin: 1rem 0;
+    }
+
+    .btn__dos:hover{
+        transform: scale(1);
+    }
+
+    .titulos{
+        padding: 0;
+    }
+    
+    /**************** PRINCIPAL *******************/
+
+    .principal{
+        padding: 5rem 1rem;
+        width: 100%;
+        min-height: 10vh;
+    }
+
+    .premier__text{
+        font-size: 3rem;
+    }
+    
+    .premier__btn{
+        font-size: 1rem;
+    }
+
+    /**************** LIGAS *******************/
+    .ligas{
+        width: 100%;
+        min-height: 80vh;
+        padding: 5rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+    .tit__container{
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tit__ligas{
+        font-size: 3rem;
+        font-weight: bold;
+        font-family: "Bebas Neue", sans-serif;
+    }
+
+    .cards{
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card__principal{
+        width: 100%;
+        height: 100%;
+        border-radius: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: 0.7s ease;
+    }
+
+    .card__principal:hover{
+        transform: scale(1);
+    }
+
+    .cantidad__ligas{
+        font-size: 5rem;
+        font-weight: 600;
+        margin: 0 0 .5rem 0;
+    }
+
+    .resultado__laliga{
+        height: 25rem;
+        width: 100%;
+    }
+
+    .resultado__bundesliga{
+        height: 25rem;
+        width: 100%;
+    }
+
+    .resultado__premier{
+        height: 25rem;
+        width: 100%;
+    }
+
+    .resultado__ligargentina{
+        height: 25rem;
+        width: 100%;
+    }
+
+    .resultado__ucl{
+        height: 25rem;
+        width: 100%;
+    }
+
+    .resultado__cl{
+        height: 25rem;
+        width: 100%;
+    }
+
+    .resultado__card{
+        color: var(--black-color);
+        background: var(--principal-color);
+        min-width: 15rem;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3rem;
+        font-size: 1rem;
+    }
+
+    /**************** LIGAS *******************/
+    .ligas{
+        width: 100%;
+        min-height: 50vh;
+        padding: 5rem 1rem;
+        flex-wrap: nowrap;
+        gap: 2rem;
+    }
+
+    .resultados__datos{
+        gap: 2rem;
+    }
+    
+    .ir__resultados{
+        width: 100%;
+        height: 25rem;
+        font-size: 5rem;
+    }
+
+    .ir__resultados:hover{
+        transform: scale(1);
+    }
+    
+    .ne{
+        width: 3.5rem;
+    }
+    
+    .datos__card{
+        width: 100%;
+        height: 20rem;
+    }
+    
+    .datos__tit{
+        font-size: 1.5rem;
+    }
+    
+    .datos__cant{
+        font-size: 5rem;
+    }
 
 
-@media (max-width: 800px) {
+    /**************** FOOTER *******************/
+    footer{
+        overflow-x: hidden;
+        width: 100%;
+        min-height: 50vh;
+        padding: 5rem 1rem;
+        background: var(--black-color);
+        flex-direction: column;
+    }
+    
+    .logo__footer{
+        width: 100%;
+    }
+
+    .red{
+        width: 10rem;
+        margin: 0;
+    }
+
+    .red:hover{
+        transform: scale(1);
+    }
+
+    .copy__cont{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding: 0;
+    }
+
+    .copy{
+        margin: 0;
+        font-size: 0.9rem;
+    }
+
+    .dd{
+        font-size: 0.9rem;
+    }
+    
+    .by{
+        font-size: 0.9rem;
+    }
+
+}
+
+@media (max-width: 900px) {
 
     body{
         overflow-x: hidden;
